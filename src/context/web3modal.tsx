@@ -1,6 +1,6 @@
 'use client'
 
-import { createWeb3Modal, defaultConfig } from '@web3modal/ethers/react'
+import { createWeb3Modal, defaultConfig } from '@web3modal/ethers5/react'
 
 // 1. Get projectId from https://cloud.walletconnect.com
 const projectId = 'baf8428698c7cddf0e212bcff8ffabdf'
@@ -46,6 +46,7 @@ const ethersConfig = defaultConfig({
 createWeb3Modal({
     ethersConfig,
     chains: [eduChain],
+    themeMode: 'dark',
     projectId,
     enableAnalytics: true // Optional - defaults to your Cloud configuration
 })
